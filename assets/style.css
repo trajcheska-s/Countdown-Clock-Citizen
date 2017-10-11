@@ -1,0 +1,115 @@
+html, body, h1, h2, p{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #000000;
+}
+
+#container{
+    width: 2000px;
+    height: 1125px;
+    position: relative;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    overflow: hidden;
+    margin: 60px auto 60px auto;
+}
+
+#copy{
+    position: absolute;
+    top: 17px;
+    left: 40px;
+    line-height: 37px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+#countdown{
+    position: absolute;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    width: 1000px;
+    top: 55%;
+    left: 45%;
+    transform: translateY(-50%);
+    color: #e82332;
+    font-size: 95px;
+    font-weight: bold;
+}
+
+#countdown.end{
+    justify-content: center;
+    -ms-flex-pack: center;    
+}
+
+.time-block{
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    display: flex; 
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.time-number{
+    display: block;
+    color: #ffffff;
+    line-height: 100px;
+    font-size: 195px;
+    font-weight: bold;
+}
+
+.time-unit{
+    display: block;
+    color: #e82332;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.line{
+    display: block;
+    border: 2px solid;
+    color: #e82332;
+    width: 190px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+
+#watch-hands{
+    position: absolute;
+    top: 300px;
+    left: 210px;
+    width: 480px;
+    height: 480px;
+}
+
+#watch-hands img{
+    position: absolute;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+
+
+#time{
+    color: #ccc;
+    font-size: 21px;
+    font-weight: bold;
+    position: absolute;
+    top: 47.5%;
+    left: 78.5%;
+}

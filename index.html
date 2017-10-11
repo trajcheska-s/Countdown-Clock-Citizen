@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Citizen Countdown</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/index.js"></script>
+</head>
+<body>
+    <div id="container">
+      
+        <div id="countdown">
+          <!--   <div class="time-block" id="days">
+                <div class="time-number">00</div>
+                <div class="time-unit">DAYS</div>
+            </div> -->
+            <div class="time-block" id="hours">
+                <div class="time-number">00</div>
+                <div class="line"></div>
+                <div class="time-unit">Hours</div>
+            </div>
+            <div class="time-block" id="minutes">
+                <div class="time-number">00</div>
+                <div class="line"></div>
+                <div class="time-unit">Minutes</div>
+            </div>
+            <div class="time-block" id="seconds">
+                <div class="time-number">00</div>
+                <div class="line"></div>
+                <div class="time-unit">Seconds</div>
+            </div>
+        </div>
+
+
+        <div id="watch-hands">
+
+            <!-- Show Date -->
+              <div id='time'></div>
+              <script>
+              var currentDate = new Date(),
+                  day = currentDate.getDate();
+              var today = day;
+              document.getElementById('time').innerHTML = day;
+              </script>
+            <!-- EndDate -->
+
+            <!-- <img id="twenty-four-hour-hand" src="./assets/img/twenty-four-hour-hand.png"> -->
+            <img id="hour-hand"             src="./assets/img/hour-hand.png">
+            <img id="minute-hand"           src="./assets/img/minute-hand.png">
+            <img id="second-hand"           src="./assets/img/second-hand.png">
+        </div>
+
+    </div>
+</body>
+</html>
